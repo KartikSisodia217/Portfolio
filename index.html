@@ -43,6 +43,7 @@
       <li><a href="#stack" class="navbar__link" data-section="stack">Stack</a></li>
       <li><a href="#activities" class="navbar__link" data-section="activities">Activities</a></li>
       <li><a href="#hackathons" class="navbar__link" data-section="hackathons">Hackathons</a></li>
+      <li><a href="#achievements" class="navbar__link" data-section="achievements">Achievements</a></li>
       <li><a href="#certificates" class="navbar__link" data-section="certificates">Certificates</a></li>
       <li><a href="#beyond" class="navbar__link" data-section="beyond">Beyond Code</a></li>
       <li><a href="#contact" class="navbar__link" data-section="contact">Contact</a></li>
@@ -82,7 +83,7 @@
     <div class="hero__content">
       <p class="eyebrow">Software Engineer · Builder</p>
       <h1 class="hero__name">Kartik <span class="hero__name-accent">Sisodia</span></h1>
-      <p class="hero__tagline">Software Engineering student building thoughtful digital experiences with full-stack development and AI.</p>
+      <p class="hero__tagline">Software Engineering student building scalable backend systems, AI-powered applications, and full-stack products.</p>
       <div class="hero__cta-row">
         <a href="assets/Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View Resume</a>
         <a href="#contact" class="btn btn--ghost">Get in Touch</a>
@@ -142,8 +143,7 @@
           <p class="about__bio">
             Hi, I'm Kartik. I'm currently pursuing a B.Tech in Software Engineering at Delhi
             Technological University. I enjoy building applications that combine thoughtful
-            design with practical functionality, whether it's a productivity tool, an
-            AI-powered platform, or a hackathon project.
+            design with practical functionality. My core interests lie in AI Systems, Backend Engineering, Machine Learning, Full-Stack Development, and building developer tools.
           </p>
           <p class="about__bio">
             Outside academics, I actively participate in hackathons, contribute to technical
@@ -238,14 +238,14 @@
         <article class="project-row reveal">
           <div class="project-row__media">
             <img src="assets/bah-project.png" alt="BAH Project placeholder screenshot" loading="lazy" class="img-fade">
-            <span class="status-badge status-badge--unavailable">
-              <span class="status-badge__dot"></span>Archived
+            <span class="status-badge status-badge--available">
+              <span class="status-badge__dot"></span>In Progress
             </span>
           </div>
           <div class="project-row__body">
             <span class="project-row__index">01</span>
-            <h3 class="project-row__title">AI-Powered Satellite-Based Air Quality Estimation</h3>
-            <p class="project-row__desc">Predicts six ground-level pollutants by combining INSAT-3DR and Sentinel-5P satellite data with ERA5 weather data and CPCB station readings. Built for ISRO's Bharatiya Antariksh Hackathon 2026.</p>
+            <h3 class="project-row__title">AI-Based Ground-Level Air Quality Estimation</h3>
+            <p class="project-row__desc">Machine learning framework for estimating six ground-level air pollutants using INSAT-3DR satellite observations, ERA5 weather data, and CPCB monitoring stations. Achieved an R² score of 0.84 using a Multi-Output XGBoost model.</p>
             <div class="tag-row">
               <span class="tag">Python</span>
               <span class="tag">XGBoost</span>
@@ -262,15 +262,43 @@
 
         <article class="project-row project-row--reverse reveal">
           <div class="project-row__media">
+            <img src="https://placehold.co/600x400/222/555?text=Legal.AI" alt="Legal.AI placeholder screenshot" loading="lazy" class="img-fade">
+            <span class="status-badge status-badge--available">
+              <span class="status-badge__dot"></span>In Progress
+            </span>
+          </div>
+          <div class="project-row__body">
+            <span class="project-row__index">02</span>
+            <h3 class="project-row__title">Legal.AI</h3>
+            <p class="project-row__desc">Multilingual AI-powered legal assistant built using a hierarchical Retrieval-Augmented Generation (RAG) pipeline over Indian legal statutes. Supports text, voice, and document-based legal queries with citation-grounded responses powered by Gemma 4.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">LangGraph</span>
+              <span class="tag">ChromaDB</span>
+              <span class="tag">Gemma 4</span>
+              <span class="tag">React</span>
+            </div>
+            <div class="project-row__actions">
+              <a href="https://github.com/Anish-Sethi-12122/Legal.ai-AIMS-Hackathon" target="_blank" rel="noopener noreferrer" class="project-row__link">
+                <span>GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 14L14 4M14 4H6M14 4V12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-row reveal">
+          <div class="project-row__media">
             <img src="assets/college-track.png" alt="College Track placeholder screenshot" loading="lazy" class="img-fade">
             <span class="status-badge status-badge--available">
               <span class="status-badge__dot"></span>Live
             </span>
           </div>
           <div class="project-row__body">
-            <span class="project-row__index">02</span>
-            <h3 class="project-row__title">College Tracker</h3>
-            <p class="project-row__desc">A Progressive Web App that combines attendance, assignments, and timetables in one place, with real-time sync, Google sign-in, and a guest mode that works fully offline.</p>
+            <span class="project-row__index">03</span>
+            <h3 class="project-row__title">College Track</h3>
+            <p class="project-row__desc">Progressive Web Application for managing attendance, assignments, and academic schedules with Firebase Authentication, Cloud Firestore, real-time synchronization, and offline guest mode.</p>
             <div class="tag-row">
               <span class="tag">JavaScript</span>
               <span class="tag">Firebase</span>
@@ -289,7 +317,7 @@
           </div>
         </article>
 
-        <article class="project-row reveal">
+        <article class="project-row project-row--reverse reveal">
           <div class="project-row__media">
             <img src="assets/jolt.png" alt="JOLT placeholder screenshot" loading="lazy" class="img-fade">
             <span class="status-badge status-badge--unavailable">
@@ -297,9 +325,9 @@
             </span>
           </div>
           <div class="project-row__body">
-            <span class="project-row__index">03</span>
+            <span class="project-row__index">04</span>
             <h3 class="project-row__title">JOLT</h3>
-            <p class="project-row__desc">An EV route optimization tool that recommends charging stops based on charging speed, wait time, availability, and distance — not just the nearest station. Built at VIHAAN 9.0.</p>
+            <p class="project-row__desc">EV route optimization platform that recommends optimal charging stations based on charging speed, wait time prediction, charger availability, and travel distance. Developed during VIHAAN 9.0.</p>
             <div class="tag-row">
               <span class="tag">Python</span>
               <span class="tag">FastAPI</span>
@@ -307,31 +335,6 @@
             </div>
             <div class="project-row__actions">
               <a href="https://github.com/KartikSisodia217/JOLT_Vihaan" target="_blank" rel="noopener noreferrer" class="project-row__link">
-                <span>GitHub</span>
-                <svg width="14" height="14" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 14L14 4M14 4H6M14 4V12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-row project-row--reverse reveal">
-          <div class="project-row__media">
-            <img src="assets/athletemind.png" alt="AthleteMind placeholder screenshot" loading="lazy" class="img-fade">
-            <span class="status-badge status-badge--unavailable">
-              <span class="status-badge__dot"></span>Archived
-            </span>
-          </div>
-          <div class="project-row__body">
-            <span class="project-row__index">04</span>
-            <h3 class="project-row__title">AthleteMind</h3>
-            <p class="project-row__desc">An AI sports coaching assistant that analyzes movement via webcam using MediaPipe and gives personalized feedback with Gemini AI. Built at the Synapse AI Hackathon.</p>
-            <div class="tag-row">
-              <span class="tag">React</span>
-              <span class="tag">MediaPipe</span>
-              <span class="tag">Gemini AI</span>
-            </div>
-            <div class="project-row__actions">
-              <a href="https://github.com/KartikSisodia217/SYNAPSE_AthleteMind" target="_blank" rel="noopener noreferrer" class="project-row__link">
                 <span>GitHub</span>
                 <svg width="14" height="14" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 14L14 4M14 4H6M14 4V12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
@@ -356,45 +359,52 @@
           <h3 class="bento-card__title">Languages</h3>
           <div class="stack-pills">
             <span class="stack-pill">Python</span>
-            <span class="stack-pill">JavaScript</span>
-            <span class="stack-pill">C++</span>
             <span class="stack-pill">Java</span>
-            <span class="stack-pill">SQL</span>
+            <span class="stack-pill">C</span>
+            <span class="stack-pill">C++</span>
+            <span class="stack-pill">JavaScript</span>
+            <span class="stack-pill">HTML</span>
+            <span class="stack-pill">CSS</span>
           </div>
         </div>
         <div class="bento-card span-2 card">
           <h3 class="bento-card__title">Frontend</h3>
           <div class="stack-pills">
+            <span class="stack-pill">React</span>
+            <span class="stack-pill">Tailwind CSS</span>
             <span class="stack-pill">HTML5</span>
             <span class="stack-pill">CSS3</span>
-            <span class="stack-pill">React</span>
-
           </div>
         </div>
         <div class="bento-card span-2 card">
           <h3 class="bento-card__title">Backend</h3>
           <div class="stack-pills">
+            <span class="stack-pill">FastAPI</span>
             <span class="stack-pill">Node.js</span>
-            <span class="stack-pill">Express</span>
-
           </div>
         </div>
         <div class="bento-card span-3 card">
           <h3 class="bento-card__title">AI / ML</h3>
           <div class="stack-pills">
-            <span class="stack-pill">PyTorch</span>
-            <span class="stack-pill">scikit-learn</span>
+            <span class="stack-pill">LangGraph</span>
+            <span class="stack-pill">Retrieval-Augmented Generation (RAG)</span>
+            <span class="stack-pill">Google Gemma</span>
+            <span class="stack-pill">Sentence Transformers</span>
+            <span class="stack-pill">XGBoost</span>
+            <span class="stack-pill">Scikit-learn</span>
             <span class="stack-pill">Pandas</span>
-   
+            <span class="stack-pill">ChromaDB</span>
           </div>
         </div>
         <div class="bento-card span-3 card">
           <h3 class="bento-card__title">Tools</h3>
           <div class="stack-pills">
             <span class="stack-pill">Git</span>
+            <span class="stack-pill">GitHub</span>
+            <span class="stack-pill">VS Code</span>
             <span class="stack-pill">Docker</span>
-            <span class="stack-pill">Figma</span>
-
+            <span class="stack-pill">Jupyter Notebook</span>
+            <span class="stack-pill">Vercel</span>
           </div>
         </div>
       </div>
@@ -415,7 +425,7 @@
             <img src="assets/rotaract-logo.jpg" alt="Rotaract DTU logo placeholder" loading="lazy">
           </div>
           <h3 class="activity-card__title">Rotaract DTU</h3>
-          <p class="activity-card__desc">Member · September 2025 – Present</p>
+          <p class="activity-card__desc">Director of Rotary Relations · July 2026 – Present<br>Member · September 2025 – July 2026</p>
         </div>
         <div class="activity-card card">
           <div class="activity-card__logo">
@@ -444,6 +454,13 @@
         <p class="section__subtitle">Events I've competed in.</p>
       </header>
       <div class="cards-grid cards-grid--4">
+        <div class="hack-card card">
+          <div class="hack-card__image">
+            <img src="https://placehold.co/600x400/222/555?text=Gemma+Hackathon" alt="Build with Gemma Hackathon placeholder image" loading="lazy">
+          </div>
+          <h3 class="hack-card__title">Build with Gemma Hackathon</h3>
+          <p class="hack-card__desc">Team Lead · Secured 3rd Place in the AI for Legal Assistance Track by developing Legal.AI, a multilingual citation-grounded legal assistant powered by Gemma 4 and a hierarchical RAG pipeline.</p>
+        </div>
         <div class="hack-card card">
           <div class="hack-card__image">
             <img src="assets/sih-logo.png" alt="Smart India Hackathon 2025 placeholder image" loading="lazy">
@@ -476,10 +493,27 @@
     </div>
   </section>
 
-  <section class="section" id="certificates">
+  <section class="section" id="achievements">
     <div class="section__inner">
       <header class="section__header">
         <span class="section__index" aria-hidden="true">08</span>
+        <p class="eyebrow">Milestones</p>
+        <h2 class="section__title">Achievements</h2>
+        <p class="section__subtitle">Recognitions and awards.</p>
+      </header>
+      <div class="cards-grid cards-grid--3">
+        <div class="activity-card card">
+          <h3 class="activity-card__title">🥉 3rd Place — Build with Gemma Hackathon</h3>
+          <p class="activity-card__desc"><strong>Google × AIMS</strong><br><br>Led a four-member team to secure 3rd Place in the AI for Legal Assistance Track by building Legal.AI, a multilingual citation-grounded legal assistant using Gemma 4 and a hierarchical Retrieval-Augmented Generation (RAG) pipeline.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="certificates">
+    <div class="section__inner">
+      <header class="section__header">
+        <span class="section__index" aria-hidden="true">09</span>
         <p class="eyebrow">Credentials</p>
         <h2 class="section__title">Certifications</h2>
         <p class="section__subtitle">Courses and credentials completed.</p>
@@ -522,7 +556,7 @@
   <section class="section" id="beyond">
     <div class="section__inner">
       <header class="section__header">
-        <span class="section__index" aria-hidden="true">09</span>
+        <span class="section__index" aria-hidden="true">10</span>
         <p class="eyebrow">Off the clock</p>
         <h2 class="section__title">Beyond Code</h2>
         <p class="section__subtitle">The things I do when I'm not at a keyboard for work.</p>
@@ -551,7 +585,7 @@
   <section class="section section--contact" id="contact">
     <div class="section__inner">
       <header class="section__header">
-        <span class="section__index" aria-hidden="true">10</span>
+        <span class="section__index" aria-hidden="true">11</span>
         <p class="eyebrow">Say hello</p>
         <h2 class="section__title">Contact</h2>
         <p class="section__subtitle">Reach out for opportunities or collaboration.</p>
